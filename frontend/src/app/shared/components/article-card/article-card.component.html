@@ -1,0 +1,16 @@
+<div class="article-item" *ngIf="article">
+  <div class="article-item-image"
+       style="background-image: url('{{serverStaticPath}}{{article.image}}')">
+    <div class="article-item-image-marker">{{article.category}}</div>
+  </div>
+
+  <div class="article-item-title">{{article.title}}</div>
+
+  <div class="article-item-text">{{article.description}}</div>
+
+  <div class="article-item-action">
+    <a [routerLink]="'/article/' + article.url">Читать дальше</a>
+  </div>
+</div>
+
+

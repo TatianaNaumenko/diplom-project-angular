@@ -1,0 +1,195 @@
+html, body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  scroll-behavior: smooth;
+
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Занимает всю высоту окна */
+}
+
+.container {
+
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+.button {
+  border-radius: 5px;
+  background-color: $blue-text-color;
+  text-align: center;
+  box-sizing: border-box;
+  border: 0;
+
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:active {
+    background-color: #4e749d;
+  }
+
+  &:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+}
+
+.input {
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 2px solid $blue-text-color;
+  background: #FFF;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: $blue-text-color;
+}
+
+.owl-dots.ng-star-inserted {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 36px);
+
+  .owl-dot {
+    &.active span {
+      background-color: white;
+    }
+
+    &:not(.active):hover span {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    span {
+      box-sizing: border-box;
+      border: 1px solid white;
+      background-color: transparent;
+    }
+  }
+}
+
+.popup-modal {
+  position: relative;
+  padding: 94px 152px 86px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+
+  .popup-title {
+    color: $blue-text-color;
+    font-family: 'Lora', sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .popup-content {
+    text-align: center;
+
+    .button {
+      padding: 10px;
+      width: 73px;
+      margin-top: 40px;
+    }
+  }
+
+  .popup-form {
+    width: 422px;
+
+    .popup-input {
+      position: relative;
+
+      label {
+        position: absolute;
+        right: 5px;
+        color: red;
+      }
+      input, select {
+        border-radius: 3px;
+        border: 2px solid $blue-text-color;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+        color: $blue-text-color;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 5px;
+        outline: none;
+        appearance: none;
+
+        &::placeholder {
+          color: #A8ABA7;
+        }
+      }
+    }
+
+
+    .button {
+      padding: 15px 40px;
+      width: 422px;
+      margin-top: 15px;
+
+      font-size: 16px;
+    }
+  }
+
+  .popup-cross {
+    position: absolute;
+    top: 32px;
+    right: 31px;
+    cursor: pointer;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.article-body-content {
+  h1 {
+    color: $blue-text-color;
+    font-family: 'Lora', sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 130%;
+    width: 607px;
+  }
+
+  h3 {
+    color: $blue-text-color;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+  }
+
+  p {
+    color: $dark-blue-text-color;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+}
+
+.mat-mdc-progress-spinner .mdc-circular-progress__determinate-circle, .mat-mdc-progress-spinner .mdc-circular-progress__indeterminate-circle-graphic {
+  stroke: $blue-text-color !important;
+}
+
+
