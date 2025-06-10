@@ -28,6 +28,13 @@
         &:last-child {
           margin-bottom: 10px;
         }
+
+        .error-message {
+          color: red;
+          font-size: 12px;
+          margin-top: 5px;
+          width: 421px;
+        }
       }
 
       .auth-checkbox {
@@ -81,4 +88,3 @@
     }
   }
 }
-

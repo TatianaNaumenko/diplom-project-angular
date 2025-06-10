@@ -14,7 +14,7 @@ import { LoginResponseType } from 'src/types/login-response.type';
 })
 export class SignupComponent implements OnInit{
   signupForm = this.fb.group({
-    name: ['', [Validators.required, Validators.pattern(/^[А-Я][а-я]+$/)]],
+    name: ['', [Validators.required, Validators.pattern(/^[А-Я A-Z][а-я a-z]+$/)]],
     email: ['', [Validators.email, Validators.required]],
     password: ['', [Validators.required, Validators.pattern(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/)]],
     agree: [false, [Validators.requiredTrue]],
